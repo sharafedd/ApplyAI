@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>ApplyAI Dashboard</title>
+  <style>
+    /* Basic reset */
+    body, html {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+    }
+    /* Layout */
+    .container {
+      display: flex;
+      height: 100vh;
+    }
+    .sidebar {
+      width: 250px;
+      background-color: #2c3e50;
+      color: #ecf0f1;
+      padding: 20px;
+    }
+    .sidebar h2 {
+      font-size: 24px;
+      margin-bottom: 20px;
+    }
+    .sidebar a {
+      color: #ecf0f1;
+      text-decoration: none;
+      display: block;
+      padding: 10px 0;
+    }
+    .sidebar a:hover {
+      background-color: #34495e;
+      padding-left: 10px;
+    }
+    .main-content {
+      flex: 1;
+      background-color: #ecf0f1;
+      padding: 30px;
+      overflow-y: auto;
+    }
+    /* Header */
+    .header {
+      border-bottom: 2px solid #bdc3c7;
+      margin-bottom: 20px;
+    }
+    .header h1 {
+      font-size: 28px;
+      margin: 0;
+    }
+    /* Content Sections */
+    .section {
+      background-color: #fff;
+      padding: 20px;
+      margin-bottom: 20px;
+      border-radius: 4px;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    }
+    .section h3 {
+      margin-top: 0;
+    }
+    /* Cards for job listings */
+    .job-card {
+      background: #f9f9f9;
+      margin-bottom: 15px;
+      padding: 15px;
+      border-radius: 4px;
+      border: 1px solid #ddd;
+    }
+    .job-card h4 {
+      margin: 0 0 10px 0;
+    }
+    .job-card p {
+      margin: 0 0 5px 0;
+      font-size: 14px;
+    }
+    /* Form styling */
+    .form-group {
+      margin-bottom: 15px;
+    }
+    .form-group label {
+      display: block;
+      margin-bottom: 5px;
+      font-weight: bold;
+    }
+    .form-group input, .form-group select, .form-group textarea {
+      width: 100%;
+      padding: 8px;
+      box-sizing: border-box;
+    }
+    /* Button style */
+    .btn {
+      display: inline-block;
+      padding: 10px 20px;
+      background-color: #3498db;
+      color: #fff;
+      text-decoration: none;
+      border-radius: 4px;
+      border: none;
+      cursor: pointer;
+    }
+    .btn:hover {
+      background-color: #2980b9;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <!-- Sidebar Navigation -->
+    <div class="sidebar">
+      <h2>ApplyAI</h2>
+      <a href="#dashboard">Dashboard</a>
+      <a href="#preferences">Preferences</a>
+      <a href="#job-matches">Job Matches</a>
+      <a href="#company-research">Company Research</a>
+      <a href="#doc-editor">CV & Cover Letter</a>
+      <a href="#auto-apply">Auto Apply Control</a>
+      <a href="#tracker">Application Tracker</a>
+      <a href="#notifications">Notifications</a>
+      <a href="#settings">Settings</a>
+    </div>
+    
+    <!-- Main Content Area -->
+    <div class="main-content">
+      <!-- Header / Dashboard -->
+      <div class="header" id="dashboard">
+        <h1>Dashboard</h1>
+        <p>Overview of your current job applications and stats.</p>
+      </div>
+
+      <!-- Example Section: Job Matches -->
+      <div class="section" id="job-matches">
+        <h3>Job Matches</h3>
+        <div class="job-card">
+          <h4>Frontend Developer at XYZ Corp</h4>
+          <p><strong>Score:</strong> 88%</p>
+          <p><strong>Type:</strong> Remote, Full-Time</p>
+          <a class="btn" href="#">View Details</a>
+        </div>
+        <div class="job-card">
+          <h4>Backend Engineer at Acme Inc.</h4>
+          <p><strong>Score:</strong> 82%</p>
+          <p><strong>Type:</strong> On-site, Contract</p>
+          <a class="btn" href="#">View Details</a>
+        </div>
+      </div>
+
+      <!-- Example Section: Preferences -->
+      <div class="section" id="preferences">
+        <h3>Set Your Job Preferences</h3>
+        <form>
+          <div class="form-group">
+            <label for="job-title">Job Title / Keywords</label>
+            <input type="text" id="job-title" placeholder="e.g., Full-Stack Developer">
+          </div>
+          <div class="form-group">
+            <label for="location">Location</label>
+            <input type="text" id="location" placeholder="e.g., London, Remote">
+          </div>
+          <div class="form-group">
+            <label for="salary">Salary Range</label>
+            <input type="text" id="salary" placeholder="e.g., 40k-60k">
+          </div>
+          <div class="form-group">
+            <label for="employment-type">Employment Type</label>
+            <select id="employment-type">
+              <option>Full-Time</option>
+              <option>Part-Time</option>
+              <option>Contract</option>
+              <option>Internship</option>
+            </select>
+          </div>
+          <button type="submit" class="btn">Save Preferences</button>
+        </form>
+      </div>
+
+      <!-- Additional sections like Company Research, Document Editor, Tracker, etc. would follow the same structure -->
+      
+    </div>
+  </div>
+</body>
+</html>
