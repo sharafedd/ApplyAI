@@ -1,1 +1,1 @@
-'# The ApplyAI Project' 
+# The ApplyAI Project
