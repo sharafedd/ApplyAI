@@ -1,4 +1,3 @@
-import link from 'next/link';
 import Navbar from '@/components/layout/navbar';
 
 export default function PreferencesPage() {

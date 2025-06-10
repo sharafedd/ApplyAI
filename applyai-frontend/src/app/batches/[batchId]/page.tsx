@@ -1,10 +1,10 @@
-import Link from "next/link";
 import Navbar from "@/components/layout/navbar";
 
-export default function BatchDetailsPage({
+export default function Page({
   params,
 }: {
-  params: { batchId: string };
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
+  params: any;
 }) {
   const { batchId } = params;
 
