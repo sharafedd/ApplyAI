@@ -32,10 +32,10 @@ export default function Navbar() {
         <button onClick={() => setDarkMode(!darkMode)} className="hover:bg-gray-100 p-2 rounded-full">
           {darkMode ? <Sun size={20} /> : <Moon size={20} />}
         </button>
-        <button className="hover:bg-gray-100 p-2 rounded-full">
+        <div className="hover:bg-gray-100 p-2 rounded-full">
           {/* NotificationBell */}
           <NotificationBell />
-        </button>
+        </div>
 
         {/* Profile Dropdown */}
         <div className="relative">
